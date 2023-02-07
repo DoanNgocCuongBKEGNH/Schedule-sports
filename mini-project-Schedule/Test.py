@@ -1,3 +1,0 @@
-import inputcopy
-
-inputcopy.input()

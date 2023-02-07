@@ -1,7 +1,11 @@
+import time
+before = time.time()
+
 ### Local Search ###
 import traceback
 import random
 import numpy 
+import copy
 
 def generate(N):
 
@@ -275,6 +279,11 @@ def local_solve(input):
                 initialize = neighbor
                 flag = True
     return initialize[0],initialize[1]
-config , val = local_solve(distance_matrix)
-print(f'The matrix sol is {config}')
-print(f'The reasonable cost when using Local Search is {val}')
+
+distance_matrix = [[0, 1, 2, 3], [1, 0, 4, 5], [2, 4, 0, 6], [3, 5, 6, 0]]
+config_local_search, val_local_search = local_solve(distance_matrix)
+print(f'The reasonable cost when using Local Search is {val_local_search}, when: matrix is {config_local_search}')
+
+
+runtime = time.time() - before
+print(f'Runtime: {runtime}')

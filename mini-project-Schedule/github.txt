@@ -1,0 +1,24 @@
+
+https://nguyenhuudongkhanh.com/index.php/2022/02/18/githup-cach-dua-code-len-github/
+
+git init
+git status
+git add .
+git config --global user.email "cuongmkmtpgoldfinch@gmail.com"
+git commit -m “Add new project ”
+git branch -M main
+git remote add origin https://github.com/nguyenhuudongkhanh/DemoGit.git
+git push -u origin main
+
+'''
+Enumerating objects: 73, done.
+Counting objects: 100% (73/73), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (69/69), done.
+Writing objects: 100% (73/73), 61.57 KiB | 630.00 KiB/s, done.
+Total 73 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/cuongmkmtp1412/Schedule-sports.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+'''

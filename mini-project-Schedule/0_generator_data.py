@@ -1,14 +1,13 @@
 import random as rd
 
-n = rd.randint(2, 30, 2)
-
 def gen(filename, n):
-    d = [[rd.randint(1, 9) for i in range(n+1)] for j in range(n+1)]
-    for i in range(n+1):
-        d[i][i] = 0
-    for i in range(n+1): 
-        for j in range(n+1): 
-            d[i][j] = d[j][i]
+    distance_matrix = [[rd.randint(1, 9) for i in range(n)] for j in range(n)]
+    for i in range(n):
+        distance_matrix[i][i] = 0
+    for i in range(n): 
+        for j in range(n): 
+            distance_matrix[i][j] = distance_matrix[j][i]
+    print(distance_matrix)    # print matrix
     '''
     •Input
     •Dòng1: ghi số nguyên dương N
@@ -21,10 +20,12 @@ def gen(filename, n):
     for i in range(n):
         line = ''      
         for j in range(n):
-            line += str(d[i][j]) + ' '
+            line += str(distance_matrix[i][j]) + ' '
         f.write(line + '\n')
-	
+
+n = 6
 gen('datanew.txt',n)
+
     
     
     

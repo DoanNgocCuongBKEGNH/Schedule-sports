@@ -1,4 +1,8 @@
-from Alg1_BackTracking_copy import Node, get_sub_node
+import time
+before = time.time()
+
+import copy
+from Alg_Prepare_Node import Node, get_sub_node
 
 ### Greedy Search ###
 def greedy_solve(input:list):
@@ -28,7 +32,9 @@ def greedy_solve(input:list):
             sub_matrix,sub_pos,sub_distance = list_of_nodes[0]
             new_node = Node(sub_matrix,sub_distance,next_week,sub_pos)
             queue.append(new_node)
-distance_matrix = [[0, 1], [3, 0]]
-mat,cost = greedy_solve(distance_matrix)
-print(f'Matrix {mat}')
-print(f'The reasonable cost when using Greedy Search is {cost}')
+distance_matrix = [[0, 1, 2, 3], [1, 0, 4, 5], [2, 4, 0, 6], [3, 5, 6, 0]]
+mat_greedy,cost_greedy = greedy_solve(distance_matrix)
+print(f'The reasonable cost when using Greedy Search is {cost_greedy}, when: matrix is {mat_greedy}')
+
+runtime = time.time() - before
+print(f'Runtime: {runtime}')
