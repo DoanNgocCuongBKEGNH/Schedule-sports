@@ -22,7 +22,8 @@ def iterative_local_solve(input,K):
 
 
 distance_matrix = [[0, 1, 2, 3], [1, 0, 4, 5], [2, 4, 0, 6], [3, 5, 6, 0]]
-mat_iter_local_search,cost_iter_local_search = iterative_local_solve(distance_matrix,K=100)
+distance_matrix = [[0, 9, 4, 7, 9, 7], [9, 0, 2, 1, 4, 8], [4, 2, 0, 5, 7, 2], [7, 1, 5, 0, 9, 3], [9, 4, 7, 9, 0, 6], [7, 8, 2, 3, 6, 0]]
+# mat_iter_local_search,cost_iter_local_search = iterative_local_solve(distance_matrix,K=100)
 print(f'The reasonable cost when using Iterative Local Search is {cost_iter_local_search}, when: matrix is {mat_iter_local_search}')
 
 

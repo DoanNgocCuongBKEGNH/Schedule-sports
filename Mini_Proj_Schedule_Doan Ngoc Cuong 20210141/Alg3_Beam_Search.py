@@ -53,6 +53,9 @@ def beam_search_solve(input,k):
 
     return best
 distance_matrix = [[0, 1, 2, 3], [1, 0, 4, 5], [2, 4, 0, 6], [3, 5, 6, 0]]
+distance_matrix = [[0, 9, 4, 7, 9, 7], [9, 0, 2, 1, 4, 8], [4, 2, 0, 5, 7, 2], [7, 1, 5, 0, 9, 3], [9, 4, 7, 9, 0, 6], [7, 8, 2, 3, 6, 0]]
+distance_matrix = [[0, 9, 3, 9, 8, 5, 3, 1, 4, 1], [9, 0, 4, 6, 8, 4, 9, 7, 8, 8], [3, 4, 0, 3, 1, 2, 5, 5, 3, 9], [9, 6, 3, 0, 7, 9, 6, 1, 7, 1], [8, 8, 1, 7, 0, 7, 6, 3, 5, 7], [5, 4, 2, 9, 7, 0, 1, 4, 8, 5], [3, 9, 5, 6, 6, 1, 
+0, 1, 8, 2], [1, 7, 5, 1, 3, 4, 1, 0, 9, 7], [4, 8, 3, 7, 5, 8, 8, 9, 0, 8], [1, 8, 9, 1, 7, 5, 2, 7, 8, 0]]
 config_beam_search,val_beam_search = beam_search_solve(distance_matrix,10) 
 print(f'The reasonable cost when using Beam Search is {val_beam_search}, when: matrix is {config_beam_search}')
 

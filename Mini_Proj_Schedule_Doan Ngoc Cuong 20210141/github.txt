@@ -7,7 +7,7 @@ git add .
 git config --global user.email "cuongmkmtpgoldfinch@gmail.com"
 git commit -m “Add new project ”
 git branch -M main
-git remote add origin https://github.com/nguyenhuudongkhanh/DemoGit.git
+git remote add origin https://github.com/cuongmkmtp1412/Schedule-sports
 git push -u origin main
 
 '''

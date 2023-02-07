@@ -5,6 +5,8 @@ With n < 10: The best algorithms is Beam Search and OR-tools.
 The best algorithms are Beam Search and OR-tools. The OR-tools is slightly more optimized than Beam Search, but takes longer to run than Beam Search.
 With n > 10: The best algorithms is OR-tools.
 
+
+
 - For n = 32, OR – Tool still takes too long to respond.
 ===>>> Therefore, we will continue to develop and improve algorithms to achieve optimal results.
 Thanks for listening.

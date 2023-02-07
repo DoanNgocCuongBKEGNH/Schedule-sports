@@ -281,6 +281,7 @@ def local_solve(input):
     return initialize[0],initialize[1]
 
 distance_matrix = [[0, 1, 2, 3], [1, 0, 4, 5], [2, 4, 0, 6], [3, 5, 6, 0]]
+distance_matrix = [[0, 9, 4, 7, 9, 7], [9, 0, 2, 1, 4, 8], [4, 2, 0, 5, 7, 2], [7, 1, 5, 0, 9, 3], [9, 4, 7, 9, 0, 6], [7, 8, 2, 3, 6, 0]]
 config_local_search, val_local_search = local_solve(distance_matrix)
 print(f'The reasonable cost when using Local Search is {val_local_search}, when: matrix is {config_local_search}')
 

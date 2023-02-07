@@ -23,7 +23,7 @@ def gen(filename, n):
             line += str(distance_matrix[i][j]) + ' '
         f.write(line + '\n')
 
-n = 6
+n = 32
 gen('datanew.txt',n)
 
     

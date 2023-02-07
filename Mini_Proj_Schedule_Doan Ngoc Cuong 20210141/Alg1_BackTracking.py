@@ -30,7 +30,7 @@ def backtrack_solve(input:list):
                 best_distance = temp.distance
                 print(f"Found better configuration, the new best distance is : {best_distance}")
                 print(f"when: matrix {best_config}")
-                print(f"number week {temp.week}")
+                # print(f"number week {temp.week}")
                 print(f"The Tracking_pos {temp.tracking_pos}")
                 print()
 
@@ -46,7 +46,7 @@ def backtrack_solve(input:list):
 # distance_matrix = [[0, 1], [3, 0]]
 # distance_matrix = [[0, 1, 2], [1, 0, 3], [2, 3, 0]] # AssertionError: The number of teams must be even
 distance_matrix = [[0, 1, 2, 3], [1, 0, 4, 5], [2, 4, 0, 6], [3, 5, 6, 0]]
-
+distance_matrix = [[0, 9, 4, 7, 9, 7], [9, 0, 2, 1, 4, 8], [4, 2, 0, 5, 7, 2], [7, 1, 5, 0, 9, 3], [9, 4, 7, 9, 0, 6], [7, 8, 2, 3, 6, 0]]
 backtrack_solve(distance_matrix)
 # The new best config is [[0, 6, 2, 1], [3, 0, 1, 2], [5, 4, 0, 3], [4, 5, 6, 0]]
 # 0, 6, 2, 1

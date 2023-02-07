@@ -34,7 +34,8 @@ def gibb_sampling(input,K):
                 break
     return current_postion
 
-distance_matrix = [[0, 1, 2, 3], [1, 0, 4, 5], [2, 4, 0, 6], [3, 5, 6, 0]]    
+distance_matrix = [[0, 1, 2, 3], [1, 0, 4, 5], [2, 4, 0, 6], [3, 5, 6, 0]]  
+distance_matrix = [[0, 9, 4, 7, 9, 7], [9, 0, 2, 1, 4, 8], [4, 2, 0, 5, 7, 2], [7, 1, 5, 0, 9, 3], [9, 4, 7, 9, 0, 6], [7, 8, 2, 3, 6, 0]]
 mat_gibb_sampling,cost_gibb_sampling = gibb_sampling(distance_matrix,1000)
 print(f'The reasonable cost when using Gibb_sampling is {cost_gibb_sampling}, when: matrix is {mat_gibb_sampling}')
 
