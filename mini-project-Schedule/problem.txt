@@ -1,0 +1,42 @@
+19. Lậplịchthiđấuthểthao:
+Có N đội tuyển 1, 2, ..., N cần được lập lịch thi đấu với nhau theo thể thức vòng tròn: 
+- Mỗi đội phải gặp tất cả N-1 đội còn lại, 
+- Mỗi đội 2 trận(lượt đi và lượt về trên sân nhà và trên sân khách) trong khoảng thời gian 2N-2 tuần, tuần nào cũng phải thi đấu đúng 1 trận. 
+- Khoảng cách từ sân của đội tuyển i đến sân của đội tuyển j là d(i, j).
+Hãy lập kế hoạch thi đấu cho N đội, sao cho: 
+                            tổng khoảng cách di chuyển của các đội là ngắn nhất.
+
+•Input
+•Dòng1: ghi số nguyên dương N
+•Dòngi+1 (i= 1,..., N): ghi hàng thứ i của ma trận d   
+< Khoảngcáchtừsâncủađộituyểniđếnsâncủađộituyểnj là d(i,j).>
+
+2
+0 1
+1 0
+
+3
+0 1 2
+1 0 3
+2 3 0
+
+4
+0 1 2 3
+1 0 4 5
+2 4 0 6
+3 5 6 0
+
+Found better configuration, the new best value is : 56
+The new best config is [[0, 6, 5, 1], [3, 0, 1, 2], [2, 4, 0, 3], [4, 5, 6, 0]]
+0 6 5 1
+3 0 1 2
+2 4 0 3
+4 5 6 0
+
+"
+Thuật toán đơn giản, dễ hiểu, dễ cài đặt.
+Thuật toán hiệu quả: Dựa vào hai yếu tố là thời gian thực hiện thuật toán
+ (còn gọi là độ phức tạp thuật toán) và dung lượng bộ nhớ cần thiết để lưu trữ dữ liệu.
+  Tuy nhiên, trong bối cảnh hiện tại khi các máy tính có khả năng lưu trữ rất lớn
+   thì yếu tố mà chúng ta cần quan tâm nhiều hơn là độ phức tạp thuật toán.
+"
